@@ -1,0 +1,22 @@
+frontend:
+  image:
+    repository: shopflowacr.azurecr.io/shopflow-frontend
+    tag: latest
+  replicas: 1
+  port: 3000
+
+backend:
+  image:
+    repository: shopflowacr.azurecr.io/shopflow-backend
+    tag: latest
+  replicas: 1
+  port: 5000
+
+mongodb:
+  image: mongo:6
+  replicas: 1
+  port: 27017
+  storage: 1Gi
+
+secret:
+  mongoUri: bW9uZ29kYjovL3Jvb3Q6cGFzc3dvcmRAbW9uZ29kYi1zZXJ2aWNlOjI3MDE3L3Nob3BmbG93P2F1dGhTb3VyY2U9YWRtaW4=

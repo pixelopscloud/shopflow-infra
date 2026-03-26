@@ -1,3 +1,6 @@
+imagePullSecrets:
+  - name: acr-secret
+
 frontend:
   image:
     repository: shopflowacr.azurecr.io/shopflow-frontend

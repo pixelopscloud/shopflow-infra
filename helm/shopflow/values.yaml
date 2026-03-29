@@ -4,14 +4,14 @@ imagePullSecrets:
 frontend:
   image:
     repository: shopflowacr.azurecr.io/shopflow-frontend
-    tag: eb11104eace021fbf391d8c87feaec37eb33c452
+    tag: 9581b51d39e6733559956725965b7784110786d2
   replicas: 1
   port: 3000
 
 backend:
   image:
     repository: shopflowacr.azurecr.io/shopflow-backend
-    tag: eb11104eace021fbf391d8c87feaec37eb33c452
+    tag: 9581b51d39e6733559956725965b7784110786d2
   replicas: 1
   port: 5000
 
